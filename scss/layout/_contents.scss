@@ -30,6 +30,23 @@
 			width: 100%;
 			position: absolute;
 			
+			// アクセススライダー
+			&.-access-sliderArea{
+				position: absolute;
+				top: 23%;
+				width: 100%;
+				text-align: center;
+				@include mq(sp){
+					top: 55%;
+					width: 91%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				@include mq(tb){
+					top: 56.25%;
+					right: 0;
+				}
+			}
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{
 				top: 2.5%;
